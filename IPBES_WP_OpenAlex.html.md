@@ -1,5 +1,5 @@
 ---
-title: OpenAlex as the Literature Database of Choice
+title: OpenAlex as the Literature Database of Choice of IPBES
 subtitle: White Paper
 date: today
 author:
