@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Rainer M Krug">
-<meta name="dcterms.date" content="2024-09-24">
+<meta name="dcterms.date" content="2024-10-09">
 
 <title>OpenAlex as the Literature Database of Choice of IPBES</title>
 <style>
@@ -3052,7 +3052,7 @@ vertical-align: -.125em;
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#glossar" id="toc-glossar" class="nav-link active" data-scroll-target="#glossar">Glossar</a></li>
+  <li><a href="#glossary" id="toc-glossary" class="nav-link active" data-scroll-target="#glossary">Glossary</a></li>
   <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
   <li><a href="#advantages-openalex-in-comparison-to-other-databases" id="toc-advantages-openalex-in-comparison-to-other-databases" class="nav-link" data-scroll-target="#advantages-openalex-in-comparison-to-other-databases">Advantages OpenAlex in comparison to other databases</a>
   <ul>
@@ -3097,7 +3097,7 @@ vertical-align: -.125em;
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">September 24, 2024</p>
+      <p class="date">October 9, 2024</p>
     </div>
   </div>
   
@@ -3112,34 +3112,25 @@ vertical-align: -.125em;
   </div>
   </div>
   
-<div>
-  <div class="abstract">
-    <div class="block-title">Abstract</div>
-    <p>The short abstract goes here and can go over multiple lines. …</p>
-  </div>
-</div>
 
 
 </header>
 
 
-<p><strong>Reviewed by</strong>:</p>
-<ul>
-<li></li>
-</ul>
 <p><em>For any inquires please contact <a href="mailto:aidin.niamir@senckenberg.de">aidin.niamir@senckenberg.de</a></em></p>
-<section id="glossar" class="level2">
-<h2 class="anchored" data-anchor-id="glossar">Glossar</h2>
+<section id="glossary" class="level2">
+<h2 class="anchored" data-anchor-id="glossary">Glossary</h2>
 <ul>
 <li><a id="glossary-api" href>API</a>: Application Programming Interface. An interface to query the database programmatically.</li>
-<li><a id="glossary-data-dump" href>data dump</a>: Download from the whole database of a database for local use.</li>
+<li><a id="glossary-data-snapshot" href>data snapshot</a>: A snapshot of the data which can be downloaded for local use.</li>
 </ul>
 </section>
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>This white paper will look at the suitability of OpenAlex as a recommended data source for IPBES assessments of scholary literature in contrast to for example <a href="https://www.webofscience.com/wos/">Web of Science</a> and <a href="https://www.scopus.com/">Scopus</a>. The scope only concerns the use within IPBES nd the main focus is on the transparency of the literature search for academic literature.</p>
 <p>In IPBES assessments, the main sources for scholary literature search were <a href="https://www.webofscience.com/wos/">Web of Science</a> and <a href="https://www.scopus.com/">Scopus</a>. These were mainly used via the web interface due to licensing limitations and complexities in the <a href="#glossary-api">API</a>. The use of the web interface poses a huge problem regarding the transparency and the reproducibility of the search. In addition, neither the data used of these scholary data sources nor the code which is used to conduct the search or the <a href="#glossary-api">API</a> implementation is openly availabe. As the literature search forms the foundation of many aspects in IPBES assessments, this lack of transparency filters through to the final product.</p>
-<p>The Data and Knowledge Management Policy (https://www.ipbes.net/node/38260 and https://zenodo.org/records/6243095) aims at improving the transparency of IPBES products. One alternative to these proprietary scholary data sources is <a href="https://openalex.org">OpenAlex</a>. In comparison to the proprietoryh and non open scholary data sources, OpenAlex is open and free to use and the data and code used is openly available, licensed under the <a href="https://creativecommons.org/public-domain/cc0/">CC0 license</a>.</p>
-<p>The data tsu therefore decided to assess the suitability of OpenAlex as a replacement for the proprietary scholary data sources. Based on this initial assessment and the initial usage in assessments, we recommend the usage of OpenAlex instead of proprietary scholary data sources.</p>
+<p>The Data and Knowledge Management Policy (https://www.ipbes.net/node/38260 and https://zenodo.org/records/6243095) has the as one objective the improvement of the transparency of IPBES products. One alternative to these proprietary scholary data sources is <a href="https://openalex.org">OpenAlex</a>. In comparison to the proprietory and closed scholary data sources, OpenAlex is open and free to use and the data and code used is openly available, licensed under the <a href="https://creativecommons.org/public-domain/cc0/">CC0 license</a>.</p>
+<p>The data tsu therefore decided to assess the suitability of OpenAlex as a replacement for the proprietary scholary data sources in the context of IPBES, with particular focus on the needs of the assessments. Based on this initial assessment and the initial usage in assessments, we recommend the usage of OpenAlex instead of proprietary scholary data sources.</p>
 <p>This document will detail differences between the sholary data sources and outline the advantages of OpenAlex over WoS and Scopus.</p>
 </section>
 <section id="advantages-openalex-in-comparison-to-other-databases" class="level2">
@@ -3150,7 +3141,7 @@ vertical-align: -.125em;
 <li>Coverage (e.g Global South, academic, grey literature, etc)</li>
 <li>Openness of data and code used</li>
 <li>Web and <a href="#glossary-api">API</a> Access</li>
-<li>costs</li>
+<li>costs for usage</li>
 </ul>
 <p>We will go throuh these points in more detail now.</p>
 <section id="sec-comp_open_alex" class="level3">
@@ -3237,6 +3228,10 @@ vertical-align: -.125em;
 </tbody>
 </table>
 <p>(From: <a href="https://openalex.org/about#comparison">OpenAlex</a>)</p>
+<p><a href="https://arxiv.org/abs/2401.16359">Culbert et al. (2024)</a> analysed the coverage of OpenAlex, Web of Science and Scopus and came to the conclusion that</p>
+<blockquote class="blockquote">
+<p>[…] when restricted to a cleaned dataset of 16,788,282 recent publications shared by all three databases, OpenAlex has average reference numbers comparable to both Web of Science and Scopus.</p>
+</blockquote>
 </section>
 <section id="coverage-e.g-global-south-academic-grey-literature-etc" class="level3">
 <h3 class="anchored" data-anchor-id="coverage-e.g-global-south-academic-grey-literature-etc">Coverage (e.g Global South, academic, grey literature, etc)</h3>
@@ -3247,47 +3242,49 @@ vertical-align: -.125em;
 <figcaption>From: <a href="https://openalex.org/stats">OpenAlex</a></figcaption>
 </figure>
 </div>
+<p><a href="https://arxiv.org/abs/2409.01120">Alonso-Alvarez &amp; van Eck</a> analysed the coverage and metadata of African publications in particular, and came to the conclusion, that</p>
+<blockquote class="blockquote">
+<p>Our analysis shows that OpenAlex offers the most extensive publication coverage. In terms of metadata, OpenAlex offers a high coverage of publication and author information. It performs worse regarding affiliations, references, and funder information. Importantly, our results also show that metadata availability in OpenAlex is better for publications that are also indexed in Scopus or WoS.</p>
+</blockquote>
 </section>
 <section id="openness-of-data-and-code-used" class="level3">
 <h3 class="anchored" data-anchor-id="openness-of-data-and-code-used">Openness of Data and Code used</h3>
-<p>OpenAlex is free and open, i.e. it is free to use for everybody without any subscription or registration, by design. The data is freely available (database dumps (i.e. download of the whole dataset) are possible and easy to do). The datasets can therefore be analysed in regards to aspects which are not implemented in the <a href="#glossary-api">API</a>.</p>
+<p>OpenAlex is free and open, i.e. it is free to use for everybody without any subscription or registration, by design. The data is freely available by downloading a <a href="#glossary-glossary-data-snapshot">data snapshot</a> by following the <a href="https://docs.openalex.org/download-all-data/openalex-snapshot">instructions on OpenAlex</a>. The datasets can therefore be analysed locally using approaches which are not provisioned for in the <a href="#glossary-api">API</a>.</p>
 </section>
 <section id="web-and-api-access" class="level3">
 <h3 class="anchored" data-anchor-id="web-and-api-access">Web and <a href="#glossary-api">API</a> Access</h3>
-<p><a href="#glossary-api">API</a> access is important for accessing the database programmatically. An example is a search for all articles covering a specific topic. Usually, this is an iterative provess which needs refinement of the search terms. The traditional way is to type the search term in the search box and at least write down the number of hits, change the search term and repeat the process. Especially when other comparisons should also be done (e.g. assessment of certain key-papers are in the search results), is this a very tedious and error prone process.</p>
+<p><a href="#glossary-api">API</a> access is important for accessing the database programmatically. An example is a search for all articles covering a specific topic. Usually, this is an iterative provess which needs refinement of the search terms. The traditional way is to type the search term in the search box and at least write down the number of hits, change the search term and repeat the process. Especially when other comparisons should also be done (e.g. assessment of certain key-papers are in the search results), this becomes a very tedious and error prone process.</p>
 <p>This process can be automated by using the <a href="#glossary-api">API</a>. In this case, the search is defined e.g. in R or any other programming language and the search is done programmatically. The results can then be analysed and the search terms can be refined in a reproducible way with transparent criteria. The results can be shown in a clear, concise and reproducible automatically generated report.</p>
 <p>Nevertheless, web acces to conduct manual searches is a valuable tool to conduct initial testing of search terms.</p>
 <p>OpenAlex has, as all of the other other scholary data sources, a <a href="https://openalex.org/works">web interface</a>.</p>
 <p>In addition to the web interface, most scholary sources, with the notable exception of google scholar, have an <a href="#glossary-api">API</a> which can be used to access the data programmatically.</p>
-<p>In contrast to the <a href="#glossary-api">APIs</a> assessed, (WoS, Scopus), the <a href="https://docs.openalex.org">OpenAlex [API](#glossary-api)</a>] is relatively simple but provides all the neccessary functionality needed for all IPBES related tasks. For more complex searches or analysis, the <a href="#glossary-data-dump">data dump</a> can be used and data can be stored and analysed locally.</p>
+<p>In contrast to the <a href="#glossary-api">APIs</a> assessed, (WoS, Scopus), the <a href="https://docs.openalex.org">OpenAlex API</a> is relatively simple but provides all the neccessary functionality needed for all IPBES related tasks. For more complex searches or analysis, a <a href="#glossary-data-snapshot">data snapshot</a> can be stored and analysed locally.</p>
 <p>To simplify the <a href="#glossary-api">API</a> usage even more, the excellent R package <a href="https://docs.ropensci.org/openalexR/articles/A_Brief_Introduction_to_openalexR.html">openalexR</a> is available to access the <a href="#glossary-api">API</a> from <a href="https://www.r-project.org/">R</a>.</p>
 </section>
 <section id="costs" class="level3">
 <h3 class="anchored" data-anchor-id="costs">Costs</h3>
-<p>OpenAlex is free to use, which is not the case for most other databases. If the limit for free usage (100k <a href="#glossary-api">API</a> calls per day with a maximum of 10 per second) is nnot enaough, a Premium subscription can be obtained (the tsu has obtained a Premium license free of charge due to extensive feed back and extensive discussions with OpenAlex). The pricing is determined on a case by case basis.</p>
-<p>For about 95% cases of IPBES, the free tier is more than enough, and the remaining 5% simply are still possible but require longer running times of the search.</p>
-<p>In contrast, the <a href="#glossary-api">API</a> costs for WoS can easily go intu 10s of thousands per dollars per year, and if a <a href="#glossary-data-dump">data dump</a> is required even in the millions. In addition, none of the offered smaller API {#glossary-api} licenses covers the needs of IPBES, i.e. doewnload of diverse metadata as well as download of a large nuber of works.</p>
+<p>OpenAlex is free to use, which is not the case for most other databases. If the limit for free usage (100k <a href="#glossary-api">API</a> calls per day with a maximum of 10 per second) is not enaough, a Premium subscription can be obtained (the tsu has obtained a Premium license free of charge due to extensive feed back and extensive discussions with OpenAlex). The pricing is determined on a case by case basis.</p>
+<p>For nearly all usage scenarios within IPBES, the free tier is more than enough, and the remaining usage scenarios are still possible but require longer running times of the search, or can utilise a <a href="#glossary-data-snapshot">data snapshot</a>.</p>
+<p>In contrast, the <a href="#glossary-api">API</a> costs for WoS can easily go intu 10s of thousands per dollars per year, and if a <a href="#glossary-data-snapshot">data snapshot</a> is required even in the millions. In addition, none of the offered smaller API {#glossary-api} licenses covers the needs of IPBES, i.e. download of diverse metadata as well as download of a large nuber of works.</p>
 </section>
 </section>
 <section id="conclusion" class="level2">
 <h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p>We therefore recommend, the OpeAlex as the preferred scholary data sources for IPBES as it is a suitable replacement for WoS and Scopus.</p>
-<p>To facilitate the switch, the following technical guidelines are in preparation to help the authors to use OpenAlex programmatically in their assessments - <a href="https://ipbes-data.github.io/IPBES_TG_Snowballing/"><strong>Snowball Search for Literature Search and Analysis</strong></a> see other document - <strong>Keyword based search for Literature Search and Analysis using OpenAlex</strong> in planning</p>
+<p>We therefore recommend OpeAlex as the preferred scholary data sources for IPBES as it is a suitable, and even more powerful replacement for WoS and Scopus.</p>
+<p>To facilitate the switch, the following technical guidelines are in preparation to help the authors to use OpenAlex programmatically in their assessments - <a href="https://ipbes-data.github.io/IPBES_TG_Snowballing/"><strong>Snowball Search for Literature Search and Analysis</strong></a> see other document - <strong>Keyword based Literature Search and Analysis using OpenAlex</strong> in planning - <strong>Using OpenAlex data snapshots - download, storage and querying and analysing</strong> early planning stages</p>
 </section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@report{m_krug2024,
   author = {M Krug, Rainer},
   title = {OpenAlex as the {Literature} {Database} of {Choice} of
     {IPBES}},
-  date = {2024-09-24},
+  date = {2024-10-09},
   doi = {xx.xxx/zenodo.xxxxxxxx},
-  langid = {en},
-  abstract = {The short abstract goes here and can go over multiple
-    lines. ...}
+  langid = {en}
 }
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-m_krug2024" class="csl-entry quarto-appendix-citeas" role="listitem">
 M Krug, Rainer. 2024. <span>“OpenAlex as the Literature Database of
-Choice of IPBES.”</span> <em>IPBES Technical Guidelines Series</em>. <a href="https://doi.org/xx.xxx/zenodo.xxxxxxxx">https://doi.org/xx.xxx/zenodo.xxxxxxxx</a>.
+Choice of IPBES.”</span> <em>IPBES White Paper</em>. <a href="https://doi.org/xx.xxx/zenodo.xxxxxxxx">https://doi.org/xx.xxx/zenodo.xxxxxxxx</a>.
 </div></div></section></div></main>
 <!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
