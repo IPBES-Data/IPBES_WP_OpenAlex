@@ -49,22 +49,20 @@ format:
 
 
 ## Introduction
+This white paper evaluates [OpenAlex](https://openalex.org) as a recommended data source for IPBES assessments of scholarly literature, compared to [Web of Science](https://www.webofscience.com/wos/) and [Scopus](https://www.scopus.com/). The focus is on its use within IPBES, emphasizing the transparency of academic literature searches.
 
-This white paper will look at the suitability of OpenAlex as a recommended data source for IPBES assessments of scholary literature in contrast to for example [Web of Science](https://www.webofscience.com/wos/) and [Scopus](https://www.scopus.com/). The scope only concerns the use within IPBES nd the main focus is on the transparency of the literature search for academic literature.
-
-In IPBES assessments, the main sources for scholary literature search were [Web of Science](https://www.webofscience.com/wos/) and [Scopus](https://www.scopus.com/). These were mainly used via the web interface due to licensing limitations and complexities in the [API](#glossary-api). The use of the web interface poses a huge problem regarding the transparency and the reproducibility of the search. In addition, neither the data used of these scholary data sources nor the code which is used to conduct the search or the [API](#glossary-api) implementation is openly availabe. As the literature search forms the foundation of many aspects in IPBES assessments, this lack of transparency filters through to the final product. 
-
-The Data and Knowledge Management Policy (https://www.ipbes.net/node/38260 and https://zenodo.org/records/6243095) has the as one objective the improvement of the transparency of IPBES products. One alternative to these proprietary scholary data sources is [OpenAlex](https://openalex.org). In comparison to the proprietory and closed scholary data sources, OpenAlex is open and free to use and the data and code used is openly available, licensed under the [CC0 license](https://creativecommons.org/public-domain/cc0/).
+In IPBES assessments, the main sources for scholary literature search were [Web of Science](https://www.webofscience.com/wos/) and [Scopus](https://www.scopus.com/). These were mainly used via the web interface due to licensing limitations and complexities in the [API](#glossary-api). The use of the web interface poses a considerable problem regarding transparency and reproducibility of the search. In addition, neither the data used of these scholary data sources nor the code which is used to conduct the search or the [API](#glossary-api) implementation is openly availabe. As literature forms the foundation of most aspects in IPBES assessments, this lack of transparency filters through to the final product. 
+The Data and Knowledge Management Policy (https://www.ipbes.net/node/38260 and https://zenodo.org/records/6243095) aims to enhance the transparency of IPBES products. An option to the replace the proprietary scholarly data sources is [OpenAlex](https://openalex.org). Unlike the proprietary and restricted scholarly data sources, [OpenAlex](https://openalex.org) is open, free to use, and both the data and code are openly accessible under the [CC0 license](https://creativecommons.org/public-domain/cc0/).
 
 The data tsu therefore decided to assess the suitability of OpenAlex as a replacement for the proprietary scholary data sources in the context of IPBES, with particular focus on the needs of the assessments. Based on this initial assessment and the initial usage in assessments, we recommend the usage of OpenAlex instead of proprietary scholary data sources.
 
-This document will detail differences between the sholary data sources and outline the advantages of OpenAlex over WoS and Scopus.
+This document will detail differences between these sholary data sources and outline the advantages of OpenAlex over WoS and Scopus.
 
 ## Advantages OpenAlex in comparison to other databases
 
 The comparison needs to be done in several aspects which are:
 
-- Available works and number of OpenAccess works
+- Number of works in the dta source and number of OpenAccess works
 - Coverage (e.g Global South, academic, grey literature, etc)
 - Openness of data and code used
 - Web and [API](#glossary-api) Access
@@ -113,12 +111,12 @@ The data is freely available by downloading a [data snapshot](#glossary-glossary
 
 ### Web and [API](#glossary-api) Access
 
-[API](#glossary-api) access is important for accessing the database programmatically. An example is a search for all articles covering a specific topic. Usually, this is an iterative provess which needs refinement of the search terms. The traditional way is to type the search term in the search box and at least write down the number of hits, change the search term and repeat the process. Especially when other comparisons should also be done (e.g. assessment of certain key-papers are in the search results), this becomes a very tedious and error prone process. 
+[API](#glossary-api) access is important for accessing the database programmatically. An example is a search for all articles covering a specific topic. Usually, this is an iterative provess which needs refinement of the search terms. The traditional way is to type the search term in the search box and and write down at least the number of hits, change the search term and repeat the process. Especially when other comparisons should also be done (e.g. assessment of certain key-papers are in the search results), this becomes a very tedious and error prone process. 
 
 This process can be automated by using the [API](#glossary-api). In this case, the search is defined e.g. in R or any other programming language and the search is done programmatically. The results can then be analysed and the search terms can be refined in a reproducible way with transparent criteria. The results can be shown in a clear, concise and reproducible automatically generated report.
 
 Nevertheless, web acces to conduct manual searches is a valuable tool to conduct initial testing of search terms.
-
+render
 OpenAlex has, as all of the other other scholary data sources, a [web interface](https://openalex.org/works). 
 
 In addition to the web interface, most scholary sources, with the notable exception of google scholar, have an [API](#glossary-api) which can be used to access the data programmatically.
@@ -129,17 +127,18 @@ To simplify the [API](#glossary-api) usage even more, the excellent R package [o
 
 ### Costs
 
-OpenAlex is free to use, which is not the case for most other databases. If the limit for free usage (100k [API](#glossary-api) calls per day with a maximum of 10 per second) is not enaough, a Premium subscription can be obtained (the tsu has obtained a Premium license free of charge due to extensive feed back and extensive discussions with OpenAlex). The pricing is determined on a case by case basis.
+OpenAlex is free to use, which is not the case for most other databases. If the limit for free usage (100k [API](#glossary-api) calls per day with a maximum of 10 per second) is not enough, a Premium subscription can be obtained (the tsu has obtained a Premium license free of charge due to extensive feed back and extensive discussions with OpenAlex). The pricing is determined on a case by case basis.
 
-For nearly all usage scenarios within IPBES, the free tier is more than enough, and the remaining usage scenarios are still possible but require longer running times of the search, or can utilise a [data snapshot](#glossary-data-snapshot).
+For nearly all usage scenarios within IPBES, the free tier is more than enough, and the remaining usage scenarios are still possible but require longer, or can utilise a [data snapshot](#glossary-data-snapshot).
 
-In contrast, the [API](#glossary-api) costs for WoS can easily go intu 10s of thousands per dollars per year, and if a [data snapshot](#glossary-data-snapshot) is required even in the millions. In addition, none of the offered smaller API {#glossary-api} licenses covers the needs of IPBES, i.e. download of diverse metadata as well as download of a large nuber of works.
+In contrast, the [API](#glossary-api) costs for WoS can easily go into 10s of thousands per dollars per year, and if a [data snapshot](#glossary-data-snapshot) is required even in the millions. In addition, none of the offered smaller [API](#glossary-api) licenses covers the needs of IPBES, i.e. download of diverse metadata as well as download of a large nuber of works.
 
 ## Conclusion
 
 We therefore recommend OpeAlex as the preferred scholary data sources for IPBES as it is a suitable, and even more powerful replacement for WoS and Scopus.
 
-To facilitate the switch, the following technical guidelines are in preparation to help the authors to use OpenAlex programmatically in their assessments
-- [**Snowball Search for Literature Search and Analysis**](https://ipbes-data.github.io/IPBES_TG_Snowballing/) see other document
+To facilitate the switch, the following technical guidelines are available and in preparation / planning to help the authors to use OpenAlex programmatically in their assessments
+
+- [**Snowball Search for Literature Search and Analysis**](https://ipbes-data.github.io/IPBES_TG_Snowballing/IPBES_TG_Snowballing.html) completed
 - **Keyword based Literature Search and Analysis using OpenAlex** in planning
 - **Using OpenAlex data snapshots - download, storage and querying and analysing** early planning stages
