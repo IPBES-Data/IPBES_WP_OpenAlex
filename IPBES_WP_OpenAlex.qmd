@@ -43,6 +43,8 @@ format:
 
 *For any inquires please contact [aidin.niamir\@senckenberg.de](mailto:aidin.niamir@senckenberg.de)* 
 
+**GitHub Repo: [https://github.com/IPBES-Data/IPBES_WP_OpenAlex](https://github.com/IPBES-Data/IPBES_WP_OpenAlex)**
+
 ## Glossary
 - <a id="glossary-api">API</a>: Application Programming Interface. An interface to query the database programmatically.
 - <a id="glossary-data-snapshot">data snapshot</a>: A snapshot of the data which can be downloaded for local use.
