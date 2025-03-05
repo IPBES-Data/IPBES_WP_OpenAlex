@@ -133,6 +133,16 @@ For nearly all usage scenarios within IPBES, the free tier is more than enough, 
 
 In contrast, the [API](#glossary-api) costs for WoS can easily go into 10s of thousands per dollars per year, and if a [data snapshot](#glossary-data-snapshot) is required even in the millions. In addition, none of the offered smaller [API](#glossary-api) licenses covers the needs of IPBES, i.e. download of diverse metadata as well as download of a large nuber of works.
 
+## Experience using OpenAlex
+
+OpenAlex was used in the Transformative Change Assessment to fulfil several requests from the experts. The use of OpenAlex was suggested by the d&k tsu to the experts and the experts decided to use OpenAlex. The main reason was that the analysis and search they had planned would have been essentially not possible with scopus or WoS due to limitations of the GUI and non-availability (and limitations) of the APIs. 
+
+OpenAlex enabled us to compile and download the Transformative Change Corpus (TCA Corpus), consisting of 4.5 million works. The works were downloaded, searches in the TCA Corpus were done for several aspects of the TCA and evidence was produced which was considered by the authors as very important to underline their research as well as show venues for additional focal points within the assessment as well as further research based on the assessment. 
+
+OpenAlex also enabled us to do a second kind of search, i.e. a snowball search (following the citation graph from selected key papers one genertion back and one generation forward). This very focussed search is easily possible in OpenAlex via the API and the respective R package (openalexR), and has been used in the TCA as well as several times in the Business and Biodiversity Asserssment to obtain corpi of focussed literature to, im most cases, find additional evidence for certain points. It is also in usage for the Monitoring Assessment, which is at the moment conduting at least one snowball and one larger keyword search using OpenAlex.
+
+Overall, the experience with using OpenAlex within IPBES has been very positive and, as multiple requests from outside IPBES indicate, on the front of literature search methodologies in general.
+
 ## Conclusion
 
 We therefore recommend OpeAlex as the preferred scholary data sources for IPBES as it is a suitable, and even more powerful replacement for WoS and Scopus.
