@@ -19,9 +19,9 @@ copyright:
 citation: 
   type: report
   container-title: IPBES White Paper
-  doi: xx.xxx/zenodo.xxxxxxxx
-doi: xx.xxx/zenodo.xxxxxxxx
-version: 0.9
+  doi: 10.5281/zenodo.19001084
+doi: 10.5281/zenodo.19001084
+version: 2026.03.13
 bibliography: bibliography.bib
 
 format:
