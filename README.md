@@ -1,6 +1,6 @@
 # IPBES White Paper: OpenAlex
 
-[![DOI](https://zenodo.org/badge/DOI/xxx.svg)](https://doi.org/xxx)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19001084.svg)](https://doi.org/10.5281/zenodo.19001084)
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
