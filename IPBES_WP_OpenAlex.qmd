@@ -6,12 +6,12 @@ author:
   - name: Rainer M Krug
     id: sb
     orcid: 0000-0002-7490-0066
-    email: Rainer@krugs.de
+    email: Rainer@sib.swiss
     affiliation: 
-      - name: University of Zurich
-        city: Zürich  
-        state: ZH
-        url: www.uzh.ch
+      - name: Swiss Institute of Bioinformatics
+        city: Lausanne  
+        state: Vaud
+        url: www.sib.swiss
     roles: [author, editor]
 license: "CC BY"
 copyright: 
@@ -21,7 +21,7 @@ citation:
   container-title: IPBES White Paper
   doi: 10.5281/zenodo.19001084
 doi: 10.5281/zenodo.19001084
-version: 2026.03.16
+version: 2026.04.07
 bibliography: bibliography.bib
 
 format:
